@@ -3,7 +3,7 @@ require File.expand_path('../test_helper', __FILE__)
 class FiltersTest < Minitest::Test
   include Rack::Test::Methods
 
-  class TestApp < Nancy::Base
+  class TestApp < Valencias::Base
     before do
       halt 401, "unauthorized" if request.path_info == "/protected"
     end
