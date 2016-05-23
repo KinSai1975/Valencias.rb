@@ -1,7 +1,7 @@
 require 'forwardable'
 require 'rack'
 
-module Nancy
+module Valencias
   class Base
     class << self
       extend Forwardable
