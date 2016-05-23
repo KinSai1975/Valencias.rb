@@ -3,7 +3,7 @@ require File.expand_path('../test_helper', __FILE__)
 class BaseTest < Minitest::Test
   include Rack::Test::Methods
 
-  class TestApp < Nancy::Base
+  class TestApp < Valencias::Base
     use Rack::Session::Cookie, secret: "secret"
 
     get "/" do
