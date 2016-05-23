@@ -1,7 +1,6 @@
-# Nancy
-_Sinatra's little daughter_
+# Valencias.rb
 
-![Frank and Nancy by classic film scans](http://farm6.staticflickr.com/5212/5386187897_e3155cec68.jpg)
+![Valencias](http://i1208.photobucket.com/albums/cc369/Sboubi/valencias_zpsav6ykilb.png)
 
 
 ## Description
