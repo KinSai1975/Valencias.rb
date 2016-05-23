@@ -1,11 +1,11 @@
 require File.expand_path('../test_helper', __FILE__)
-require 'nancy/basic_render'
+require 'valencias/basic_render'
 
 class BasicRenderTest < Minitest::Test
   include Rack::Test::Methods
 
-  class TestApp < Nancy::Base
-    include Nancy::BasicRender
+  class TestApp < Valencias::Base
+    include Valencias::BasicRender
 
     get "/view" do
       @message = "Hello from view"
