@@ -1,11 +1,11 @@
 begin
   require 'tilt'
 rescue LoadError => e
-  puts "Please install tilt gem to use Nancy::Render"
+  puts "Please install tilt gem to use Valencias::Render"
   raise e
 end
 
-module Nancy
+module Valencias
   module Render
 
     def render(template, locals = {}, options = {}, &block)
