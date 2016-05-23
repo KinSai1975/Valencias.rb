@@ -1,3 +1,3 @@
-module Nancy
+module Valencias
   VERSION = "0.4.0"
 end
