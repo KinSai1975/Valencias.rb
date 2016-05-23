@@ -12,7 +12,7 @@ class Reverser
   end
 end
 
-class HelloApp < Nancy::Base
+class HelloApp < Valencias::Base
   use Reverser
 
   get "/" do
