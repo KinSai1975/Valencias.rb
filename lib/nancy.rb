@@ -1,4 +1,4 @@
-require 'nancy/base'
+require 'valencias/base'
 
-module Nancy
+module Valencias
 end
