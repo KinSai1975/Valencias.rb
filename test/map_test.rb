@@ -6,13 +6,13 @@ class RackApp
   end
 end
 
-class NancyApp < Nancy::Base
+class ValenciasApp < Valencias::Base
   get "/" do
-    "Hello from NancyApp"
+    "Hello from ValenciasApp"
   end
 end
 
-class MainApp < Nancy::Base
+class MainApp < Valencias::Base
   get "/" do
     "Hello from MainApp"
   end
@@ -21,8 +21,8 @@ class MainApp < Nancy::Base
     run RackApp.new
   end
 
-  map "/nancy_app" do
-    run NancyApp.new
+  map "/valencias_app" do
+    run ValenciasApp.new
   end
 
   map "/lambda_app" do
@@ -45,9 +45,9 @@ class MapTest < Minitest::Test
     assert_equal "Hello from RackApp", response.body
   end
 
-  def test_map_with_nancy_app
-    response = @request.get('/nancy_app')
-    assert_equal "Hello from NancyApp", response.body
+  def test_map_with_valencias_app
+    response = @request.get('/valencias_app')
+    assert_equal "Hello from ValenciasApp", response.body
   end
 
   def test_map_with_lambda
